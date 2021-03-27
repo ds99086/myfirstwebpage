@@ -1,21 +1,47 @@
+* {
+  border: 1px black solid 
+}
+
 body {
   font-family: sans-serif;
   margin: auto;
-  max-width: 1280px;
+  /* max-width: 1280px; */
+  background-color: teal;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+
+}
+
+#container {
+  padding: 10px 40px 20px 40px;
+  background-color: white;
+  width:70%;
+  margin:auto;
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-template-rows: 100px auto;
+}
+
+p {
+  line-height: 1.5;
 }
 
 .navbar {
   background-color: #313236;
   border-radius: 2px;
-  max-width: 800px;
+  max-width: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
 }
 
 .navbar a {
   color: #aaa;
   display: inline-block;
   font-size: 15px;
-  padding: 10px;
+  padding: 20px;
   text-decoration: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .navbar a:hover {
