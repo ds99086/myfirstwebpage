@@ -3,34 +3,63 @@
 }
 
 body {
-  font-family: sans-serif;
-  margin: auto;
+  margin: 0px;
   /* max-width: 1280px; */
   background-color: teal;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  
-
 }
 
 #container {
-  padding: 10px 40px 20px 40px;
-  background-color: white;
-  width:70%;
-  margin:auto;
   display: grid;
-  grid-template-columns: 30% auto;
-  grid-template-rows: 100px auto;
+  grid-template-columns: 200px 1fr 1fr 200px;
+  grid-template-rows: auto auto 100px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+
+  grid-template-areas: 
+  "h h h h"
+  ". c c ."
+  " f f f f";
 }
 
 p {
   line-height: 1.5;
 }
 
+.content {
+  grid-area: c;
+  background-color: white;
+  padding: 20px 40px 20px 40px;
+
+ 
+}
+
+.terminologiesintro {
+  grid-area: ti;
+}
+
+.topicname {
+  grid-area: tn;
+}
+
+.definitionbox {
+  grid-area: defbox
+}
+
+.terminologiesbox {
+  grid-area: termbox;
+}
+
+.footer {
+  grid-area: f;
+  background-color: teal;
+}
+
 .navbar {
+  grid-area: h;
+  
   background-color: #313236;
   border-radius: 2px;
-  max-width: auto;
-  position: -webkit-sticky;
+  max-width: 100%;
+  position:-webkit-sticky;
   position: sticky;
   top: 0px;
 }
@@ -43,6 +72,7 @@ p {
   text-decoration: none;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 
 .navbar a:hover {
   color: #ffffff;
