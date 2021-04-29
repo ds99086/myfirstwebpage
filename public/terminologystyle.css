@@ -29,30 +29,6 @@
     background-color: white;
     padding: 20px 40px 20px 40px;
   
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: auto;
-  
-    grid-template-areas:
-    "ti ti"
-    "tn tn"
-    "termbox defbox "
-  }
-  
-  .terminologiesintro {
-    grid-area: ti;
-  }
-  
-  .topicname {
-    grid-area: tn;
-  }
-  
-  .definitionbox {
-    grid-area: defbox
-  }
-  
-  .terminologiesbox {
-    grid-area: termbox;
   }
   
   .footer {
@@ -84,5 +60,27 @@
   .navbar a:hover {
     color: #ffffff;
   }
-  
-  
+
+  .card {
+    display:grid;
+    border-radius: 5px;
+    max-width: 250px;
+  }
+
+  .card-img-top {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+
+  @media screen and (max-width:900px) {
+    #container {
+    grid-template-rows:auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+    "h"
+    "c"
+    "f";
+    }
+    
+  }

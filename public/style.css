@@ -29,23 +29,9 @@ p {
   background-color: white;
   padding: 20px 40px 20px 40px;
 
+  display:flex;
+  flex-direction: column;
  
-}
-
-.terminologiesintro {
-  grid-area: ti;
-}
-
-.topicname {
-  grid-area: tn;
-}
-
-.definitionbox {
-  grid-area: defbox
-}
-
-.terminologiesbox {
-  grid-area: termbox;
 }
 
 .footer {
